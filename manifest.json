@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Overlay Bypass for Subscription Walls",
+  "version": "1.0.0",
+  "description": "Removes subscription overlays and re-enables scrolling on pages that block interaction.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
